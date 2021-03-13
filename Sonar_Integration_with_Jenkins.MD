@@ -13,7 +13,7 @@ Login to Jenkins server and install sonarqube scanner.
 
 - SonarQube scanner URL : https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner
 - Package : https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip
-- 
+
 ```sh 
 # wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.2.0.1227-linux.zip
 # unzip sonar-scanner-cli-3.2.0.1227-linux.zip
