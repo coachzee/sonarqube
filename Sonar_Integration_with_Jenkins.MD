@@ -48,9 +48,12 @@ Create a job to test SonarQube. Provide below sonar properties details in the jo
   - `Execute SonarQube Scanner` > `Analysis properties`  (it is mandatary).  
 
 ```sh 
+# Required parameters
 sonar.projectKey=Coachy
 sonar.projectName=CoachyDemo
 sonar.projectVersion=1.0
+
+# Artifactory directory
 sonar.sources=/var/lib/jenkins/workspace/$JOB_NAME/SimpleCustomerApp/src
 
 -
