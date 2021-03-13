@@ -48,8 +48,8 @@ Create a job to test SonarQube. Provide below sonar properties details in the jo
   - `Execute SonarQube Scanner` > `Analysis properties`  (it is mandatary).  
 
 ```sh 
-sonar.projectKey=`Valaxy`
-sonar.projectName=`ValaxyDemo`
+sonar.projectKey=`Coachy`
+sonar.projectName=`CoachyDemo`
 sonar.projectVersion=`1.0`
 sonar.sources=`/var/lib/jenkins/workspace/$JOB_NAME/SimpleCustomerApp/src`
 
