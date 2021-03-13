@@ -58,4 +58,3 @@ sonar.sources=`/var/lib/jenkins/workspace/$JOB_NAME/<PROJECT_NAME>/src`
 ```
 
 Execute job to get analysis report. 
-
