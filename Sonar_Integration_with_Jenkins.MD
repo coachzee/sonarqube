@@ -59,5 +59,3 @@ sonar.sources=`/var/lib/jenkins/workspace/$JOB_NAME/<PROJECT_NAME>/src`
 
 Execute job to get analysis report. 
 
-### Next Step
-- [x] [Nexus Installation](https://www.youtube.com/watch?v=83AGz9huJGo)
