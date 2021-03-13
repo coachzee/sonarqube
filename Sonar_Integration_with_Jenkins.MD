@@ -57,7 +57,7 @@ sonar.projectVersion=1.0
 sonar.sources=/var/lib/jenkins/workspace/$JOB_NAME/SimpleCustomerApp/src
 
 -
-sonar.sources=/var/lib/jenkins/workspace/$JOB_NAME/<PROJECT_NAME>/src  
+Note: sonar.sources=/var/lib/jenkins/workspace/$JOB_NAME/<PROJECT_NAME>/src  
 ```
 
 Execute job to get analysis report. 
