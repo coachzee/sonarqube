@@ -40,7 +40,7 @@ Login to Jenkins GUI console and install " SonarQube scanner" plugin
 
 Configure SonarQube scanner home path
 
-- `Manage Jenkins` > `Global Tool Configuration` > `SonarQube Scanner` 
+- `Manage Jenkins` > `Global Tool Configuration` > `SonarQube Scanner` > `Add SonarQube` 
    - Name  : `sonar-scanner`
    - SONAR_RUNNER_HOME : `/opt/sonar-scanner`
 
