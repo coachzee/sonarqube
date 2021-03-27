@@ -25,7 +25,14 @@ Go to SonarQube server
 Set SonarQube server details in sonar-scanner property file 
 
  - Sonar properties file: /opt/sonar_scanner/conf/sonar-scanner.properties
-   - sonar.host.url=http://`<SONAR_SERVER_IP>`:9000
+ 
+ ```sh
+# vim /opt/sonar_scanner/conf/sonar-scanner.properties
+
+Note: uncomment Sonar.host line
+
+sonar.host.url=http://`<SONAR_SERVER_IP>`:9000 # E.g sonar.host.url=http://10.10.10.2:9000
+```
 
 Login to Jenkins GUI console and install " SonarQube scanner" plugin
 
