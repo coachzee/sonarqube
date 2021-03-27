@@ -19,7 +19,7 @@ Go to SonarQube server
 # cd /opt
 # wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.0.2311-linux.zip
 # unzip sonar-scanner-cli-4.6.0.2311-linux.zip
-# mv sonar-scanner-4.6.0.2311-linux /opt/sonar_scanner 
+# mv sonar-scanner-4.6.0.2311-linux sonar_scanner 
 ```
 
 Set SonarQube server details in sonar-scanner property file 
