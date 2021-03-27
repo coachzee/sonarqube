@@ -29,7 +29,7 @@ Set SonarQube server details in sonar-scanner property file
  ```sh
 # vim /opt/sonar_scanner/conf/sonar-scanner.properties
 
-Note: uncomment Sonar.host line
+Note: uncomment Sonar.host line and add IP address
 
 sonar.host.url=http://`<SONAR_SERVER_IP>`:9000 # E.g sonar.host.url=http://10.10.10.2:9000
 ```
