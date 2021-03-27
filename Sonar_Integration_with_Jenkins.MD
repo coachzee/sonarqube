@@ -19,7 +19,7 @@ Go to SonarQube server
 # cd /opt
 # wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.0.2311-linux.zip
 # unzip sonar-scanner-cli-4.6.0.2311-linux.zip
-# mv sonar-scanner-4.6.0.2311-linux sonar_scanner 
+# mv sonar-scanner-4.6.0.2311-linux sonar-scanner 
 ```
 
 Set SonarQube server details in sonar-scanner property file 
@@ -41,8 +41,8 @@ Login to Jenkins GUI console and install " SonarQube scanner" plugin
 Configure SonarQube scanner home path
 
 - `Manage Jenkins` > `Global Tool Configuration` > `SonarQube Scanner` 
-   - Name  : `sonar_scanner`
-   - SONAR_RUNNER_HOME : `/opt/sonar_scanner`
+   - Name  : `sonar-scanner`
+   - SONAR_RUNNER_HOME : `/opt/sonar-scanner`
 
 Configure SonarQube server name and authentication token 
 - `Manage Jenkins` > `Configure Systems` > `SonarQube Servers`
