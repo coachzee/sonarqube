@@ -60,14 +60,40 @@ Find below lines at the bottom of the file and change peer to trust and ident to
 ```sh
 peer  change to trust
 ident change to md5
+
+##Change this
+
+local   all             all                                     peer
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            ident
+# IPv6 local connections:
+host    all             all             ::1/128                 ident
+# Allow replication connections from localhost, by a user with the
+# replication privilege.
+local   replication     all                                     peer
+host    replication     all             127.0.0.1/32            ident
+host    replication     all             ::1/128                 ident
+
+##To this:
+
+local   all             all                                     trust
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            md5
+# IPv6 local connections:
+host    all             all             ::1/128                 md5
+# Allow replication connections from localhost, by a user with the
+# replication privilege.
+local   replication     all                                     peer
+host    replication     all             127.0.0.1/32            md5
+host    replication     all             ::1/128                 md5
 ```
 Start PostgreSQL Database server
 ```sh
-$ sudo systemctl start postgresql-10
+$ sudo systemctl start postgresql-11
 ```
 Enable it to start automatically at System Startup
 ```sh
-$ sudo systemctl enable postgresql-10
+$ sudo systemctl enable postgresql-11
 ```
 Change the password for the default PostgreSQL user.
 ```sh
