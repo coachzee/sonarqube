@@ -84,8 +84,8 @@ host    all             all             ::1/128                 md5
 # Allow replication connections from localhost, by a user with the
 # replication privilege.
 local   replication     all                                     peer
-host    replication     all             127.0.0.1/32            md5
-host    replication     all             ::1/128                 md5
+host    replication     all             127.0.0.1/32            ident
+host    replication     all             ::1/128                 ident
 ```
 Start PostgreSQL Database server
 ```sh
