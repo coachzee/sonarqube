@@ -46,7 +46,8 @@ Configure SonarQube scanner home path
 
 Configure SonarQube server name and authentication token 
 - `Manage Jenkins` > `Configure Systems` > `SonarQube Servers`
-# Check the "Environment Variables" option
+
+    - # Check the "Environment Variables" option
     - Name : `SonarQube`
 	- ServerURL : `http://<Sonarqube_server>:9000/sonar`
 	- Server `authentication token`
