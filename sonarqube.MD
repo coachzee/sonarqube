@@ -49,12 +49,12 @@ $ sudo java -version
 
 # Step 2: Install PostgreSQL
 ```sh
-$sudo yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm -y
+$sudo yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm -y 
 ```
 ```sh
-$ sudo yum install postgresql10-server postgresql10-contrib -y
-$ sudo /usr/pgsql-10/bin/postgresql-10-setup initdb
-$ sudo vi /var/lib/pgsql/10/data/pg_hba.conf
+$ sudo yum install postgresql11-server postgresql11 -y 
+$ sudo /usr/pgsql-11/bin/postgresql-11-setup initdb
+$ sudo vim /var/lib/pgsql/11/data/pg_hba.conf
 ```
 Find below lines at the bottom of the file and change peer to trust and ident to md5 on local, ipv4 and ipv6 connections
 ```sh
@@ -118,7 +118,7 @@ Download & unzip SonarQube Latest Version
 Create new user give ownership to /opt/sonarqube directory 
 ```sh
  # useradd sonar
- # password sonar
+ # passwd sonar
  # chown -R sonar:sonar /opt/sonarqube
 ```
 SonarQube Server Instance
