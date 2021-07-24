@@ -159,9 +159,10 @@ vim /opt/sonarqube/conf/sonar.properties
   - sonar.jdbc.password=`sonar`
   - sonar.jdbc.url=jdbc:postgresql://localhost/sonar
 ```
-Switch to sonar user and start SonarQube service : Edit the sonar script file and set RUN_AS_USER
+Switch to sonar user to start SonarQube service : Edit the sonar script file and set RUN_AS_USER
 ```sh
-sudo vi  /opt/sonarqube/bin/linux-x86-64/sonar.sh
+su - sonar 
+sudo vim  /opt/sonarqube/bin/linux-x86-64/sonar.sh
 $RUN_AS_USER="sonar"
 ```
 Execute sonar.sh as service account "sonar user"
