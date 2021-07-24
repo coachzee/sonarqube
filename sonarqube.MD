@@ -163,6 +163,7 @@ Switch to sonar user to start SonarQube service : Edit the sonar script file and
 ```sh
 su - sonar 
 sudo vim  /opt/sonarqube/bin/linux-x86-64/sonar.sh
+
 $RUN_AS_USER="sonar"
 ```
 Execute sonar.sh as service account "sonar user"
@@ -201,6 +202,11 @@ LimitNPROC=8192
 WantedBy=multi-user.target
 ```
 Save and close the above file. 
+
+### Reload the daemon
+```sh
+# systemctl daemon-reload
+```
 
 Stop existing sonarqube run that was trigger by sonar and login as "root" to rerun sonar as a server . Start the Sonarqube daemon by running:
 
