@@ -15,7 +15,7 @@ Increase the vm.max_map_count kernal ,file discriptor and ulimit for current ses
 # ulimit -u 8192
 ```
 ```sh
-vi  /etc/sysctl.conf  # Add Below To The End of The File
+vim  /etc/sysctl.conf  # Add Below To The End of The File
 ```
 ```sh
 fs.file-max = 2097152
@@ -23,7 +23,7 @@ vm.max_map_count = 262144
 vm.swappiness = 1
 ```
 ```sh
-vi /etc/security/limits.conf  # Add Below To The End of The File
+vim /etc/security/limits.conf  # Add Below To The End of The File
 ```
 ```sh
 elasticsearch soft memlock unlimited
@@ -150,7 +150,7 @@ Create new user give ownership to /opt/sonarqube directory
 SonarQube Server Instance
 Edit sonar properties file to uncomment and provide required information for below properties. 
 ```sh
-vi /opt/sonarqube/conf/sonar.properties
+vim /opt/sonarqube/conf/sonar.properties
 ```
 
 ```sh
@@ -176,7 +176,7 @@ Create a systemd service file for SonarQube to run as System Startup.
 
 Add the below lines,
 ```sh
-vi /etc/systemd/system/sonarqube.service
+vim /etc/systemd/system/sonarqube.service
 ```
 ```sh
 [Unit]
