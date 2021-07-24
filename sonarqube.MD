@@ -187,7 +187,7 @@ Create a systemd service file for SonarQube to run as System Startup.
 
 Add the below lines,
 ```sh
-vim /etc/systemd/system/sonarqube.service
+# sudo vim /etc/systemd/system/sonarqube.service
 ```
 ```sh
 [Unit]
