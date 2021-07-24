@@ -146,6 +146,9 @@ Create new user give ownership to /opt/sonarqube directory
  # useradd sonar
  # passwd sonar
  # chown -R sonar:sonar /opt/sonarqube
+ # visudo
+ sonar   ALL=(ALL)       NOPASSWD: ALL #Add this line to the file
+ 
 ```
 SonarQube Server Instance
 Edit sonar properties file to uncomment and provide required information for below properties. 
@@ -154,10 +157,16 @@ vim /opt/sonarqube/conf/sonar.properties
 ```
 
 ```sh
-- File Name: /opt/sonarqube/conf/sonar.properties
-  - sonar.jdbc.username=`sonar`
-  - sonar.jdbc.password=`sonar`
-  - sonar.jdbc.url=jdbc:postgresql://localhost/sonar
+# User credentials.
+# Permissions to create tables, indices and triggers must be granted to JDBC user.
+# The schema must be created first.
+sonar.jdbc.username=sonar # Add this to this line
+sonar.jdbc.password=sonar # Add this to this line
+
+#----- PostgreSQL 9.3 or greater
+# By default the schema named "public" is used. It can be overridden with the parameter "currentSchema".
+#sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube?currentSchema=my_schema
+sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube  # Add this to this line
 ```
 Switch to sonar user to start SonarQube service : Edit the sonar script file and set RUN_AS_USER
 ```sh
