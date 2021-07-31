@@ -19,7 +19,7 @@ Go to SonarQube server
 # cd /opt
 # wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.0.2311-linux.zip
 # unzip sonar-scanner-cli-4.6.0.2311-linux.zip
-# mv sonar_scanner-4.6.0.2311-linux sonar-scanner 
+# mv sonar-scanner-4.6.0.2311-linux sonar-scanner 
 ```
 
 Set SonarQube server details in sonar-scanner property file 
@@ -27,7 +27,7 @@ Set SonarQube server details in sonar-scanner property file
  - Sonar properties file: /opt/sonar_scanner/conf/sonar-scanner.properties
  
  ```sh
-# vim /opt/sonar_scanner/conf/sonar-scanner.properties
+# vim /opt/sonar-scanner/conf/sonar-scanner.properties
 
 Note: uncomment Sonar.host line and add IP address
 
