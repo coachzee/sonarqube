@@ -43,6 +43,7 @@ sonarqube - nproc 4096
 # Installation
 Step 1: Install OpenJDK
 ```sh
+$ sudo yum update -y
 $ sudo yum install java-11-openjdk-devel
 $ sudo java -version
 $ sudo update-alternatives --config java
