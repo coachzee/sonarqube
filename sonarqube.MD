@@ -45,6 +45,7 @@ Step 1: Install OpenJDK
 ```sh
 $ sudo yum install java-11-openjdk-devel
 $ sudo java -version
+$ sudo update-alternatives --config java
 ```
 
 # Step 2: Install PostgreSQL
